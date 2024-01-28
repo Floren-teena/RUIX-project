@@ -1,4 +1,21 @@
 /* ====================>> Landing Page <<==================== */
+@media (max-width: 768px) {
+  .container {
+    height: 100%;
+  }
+  .left {
+    flex: 1 0 100%;
+    height: 100vh;
+  }
+  .right {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  .container {
+    height: 100%;
+  }
+}
 
 * {
   margin: 0;
@@ -10,12 +27,9 @@
 body {
   font-family: sans-serif, "Bebas Neue", "Cabin", "Urbanist";
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   height: 100vh;
   width: 100%;
   background-color: #000000;
-  /* margin: 5vh 15%; */
 }
 
 .container {
@@ -27,7 +41,7 @@ body {
 .left {
   flex-basis: 50%;
   background-color: white;
-  padding: 30px;
+  padding: 20px;
 }
 
 .header {
@@ -67,35 +81,25 @@ body {
   flex-direction: column;
   width: 60%;
   margin: auto;
-  margin-top: 30px;
-  /* justify-content: center; */
-  /* align-items: center; */
+  margin-top: 10px;
 }
 
 .welcome {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 20px; */
 }
 
 .welcome h1 {
-  /* color: #000; */
   font-family: "Bebas Neue";
   font-size: 55px;
-  /* font-style: normal; */
   font-weight: 400;
-  /* line-height: normal; */
   text-transform: uppercase;
 }
 
 .welcome p {
-  /* color: #000; */
   font-family: Urbanist;
-  /* font-size: 18px; */
-  /* font-style: normal; */
   font-weight: 400;
-  /* line-height: normal; */
 }
 
 .google {
@@ -107,10 +111,8 @@ body {
   color: #2e2e2e;
   font-family: Cabin;
   font-size: 14px;
-  /* font-style: normal; */
   font-weight: 400;
   border-radius: 6px;
-  /* line-height: normal; */
 }
 
 .google img {
@@ -136,17 +138,14 @@ body {
 .or-text p {
   color: #afa8a8;
   font-family: Cabin;
-  /* font-size: 16px; */
-  /* font-style: normal; */
   font-weight: 400;
-  /* line-height: normal; */
 }
 
 form {
   display: inline-flex;
   flex-direction: column;
-  /* align-items: flex-start; */
   gap: 15px;
+  margin-bottom: 15px;
 }
 
 form input {
@@ -156,32 +155,64 @@ form input {
   padding: 10px;
 }
 
+#checkbox {
+  font-family: Cabin;
+  font-weight: 400;
+}
+
+button {
+  border-radius: 30px;
+  background: #000;
+  color: white;
+  font-family: Cabin;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.account {
+  font-family: Urbanist;
+  font-weight: 400;
+  text-align: center;
+}
+
+.account a {
+  color: #fec00f;
+  font-family: Urbanist;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 ::placeholder {
   color: #2e2e2e;
 }
 
-/* #check {
-  
-} */
-
-label {
-  display: inline-block;
-}
-
 .right {
   flex-basis: 50%;
-  /* max-width: 100%; */
-  /* overflow: hidden; */
   flex-shrink: 0;
-  /* margin-left: -110px; */
-  /* border-top-right-radius: 60px;
-  border-bottom-right-radius: 60px; */
 }
 
-.right img {
-  /* width: 100%; */
+/* .right img {
+  /* width: 100%; *
   height: 100%;
   object-fit: contain;
   border-top-right-radius: 60px;
   border-bottom-right-radius: 60px;
+} */
+
+/* .responsive-image {
+  background-image: url("./assets/image.png");
+  /* object-fit: contain; *
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+} */
+
+.responsive-image {
+  bottom: 50%;
+  object-fit: cover;
+  background-position: center;
+  /* width: 100%; */
 }

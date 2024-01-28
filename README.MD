@@ -10,7 +10,6 @@ This is a login page for a company called RUIX.
 - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
-- [Author](#author)
 
 ## Overview
 
@@ -33,7 +32,3 @@ Users should be able to:
 - HTML
 - CSS
 - Figma file
-
-## Author
-
-- Decadev Florentina - [@Floren-teena](https://github.com/Floren-teena/RUIX-project)
